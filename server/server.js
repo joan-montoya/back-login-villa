@@ -27,12 +27,11 @@ app.use(bodyParser.json())
 
  
 app.get('/',function(req, res){
-  res.send('<h1>Mi api de usuarios </h1>');
+  res.send('<h1>Back - End DWIN</h1>');
 });
 
 app.use(require('./routes/usuario'));
 app.use(require('./routes/email'));
-app.use(require('./routes/administrador'));
 app.use(require('./routes/usuarioRec'));
 
  mongoose.connect('mongodb+srv://admin:3526@cluster0.4pvv9.mongodb.net/Dwin',{

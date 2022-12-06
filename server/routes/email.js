@@ -86,10 +86,10 @@ var nodemailer = require('nodemailer');
             usrDB
         });
         var mailOptions = {
-            from: "Aplicacion Login de joan",
+            from: "Aplicacion Login de Joan Montoya",
             to: usrDB.email,
-            subject: "Registro exitoso",
-            text: "confirmacion",
+            subject: "Se Requiere confirmacion de correo",
+            text: "ingresa al siguiente enlace para confirmar",
             html: "<a  href='https://login-repo-villa.vercel.app/registro'>Clic aqui para confirmar</a></li>",
           }
            transporter.sendMail(mailOptions, (error, info) =>{
